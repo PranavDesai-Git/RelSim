@@ -8,6 +8,12 @@ void error_callback(int error, const char *description);
 static void key_callback(GLFWwindow *window, int key, int scancode, int action,
                          int mods);
 
+#define MAX_VEL 0.2
+
+float origin[] = {0, 0, 0};
+float scale = 1;
+float speed = 0.001;
+float velocity = 0;
 float points[] = {
     0.0f,  0.5f,  0.0f, // x,y,z of first point.
     0.5f,  -0.5f, 0.0f, // x,y,z of second point.
@@ -16,14 +22,16 @@ float points[] = {
 
 const char *vertex_shader = "#version 410 core\n"
                             "layout(location = 0) in vec3 vp;"
+                            "uniform vec3 origin;"
+                            "uniform float scale;"
                             "void main() {"
-                            "  gl_Position = vec4( vp, 1.0 );"
+                            "  gl_Position = vec4( vp * scale + origin, 1.0 );"
                             "}";
 
 const char *fragment_shader = "#version 410 core\n"
                               "out vec4 frag_colour;"
                               "void main() {"
-                              "  frag_colour = vec4( 0.5, 0.0, 0.5, 1.0 );"
+                              "  frag_colour = vec4( 0.5, 0.5, 0.5, 1.0 );"
                               "}";
 
 int main() {
@@ -83,10 +91,16 @@ int main() {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glUseProgram(shader_program);
+
+        GLint origin_loc = glGetUniformLocation(shader_program, "origin");
+        glUniform3f(origin_loc, origin[0], origin[1], origin[2]);
+
+        GLint scale_loc = glGetUniformLocation(shader_program, "scale");
+        glUniform1f(scale_loc, 0.1);
+
         glBindVertexArray(vao);
 
         glDrawArrays(GL_TRIANGLES, 0, 3);
-
         glfwSwapBuffers(window);
     }
 
@@ -99,6 +113,32 @@ void error_callback(int error, const char *description) {
 
 static void key_callback(GLFWwindow *window, int key, int scancode, int action,
                          int mods) {
+    int change_const;
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GLFW_TRUE);
+    if (key == GLFW_KEY_W) {
+        if (velocity != MAX_VEL)
+            velocity += speed;
+        origin[1] += velocity;
+    }
+    if (key == GLFW_KEY_S) {
+        if (velocity != MAX_VEL)
+            velocity += speed;
+        origin[1] -= velocity;
+    }
+    if (key == GLFW_KEY_A) {
+        if (velocity != MAX_VEL)
+            velocity += speed;
+        origin[0] -= velocity;
+    }
+    if (key == GLFW_KEY_D) {
+        if (velocity != MAX_VEL)
+            velocity += speed;
+        origin[0] += velocity;
+    }
+    if (action == GLFW_RELEASE) {
+        while (velocity > 0) {
+            velocity -= speed;
+        }
+    }
 }
