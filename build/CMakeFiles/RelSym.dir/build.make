@@ -96,10 +96,16 @@ RelSym_EXTERNAL_OBJECTS =
 /home/host0/Projects/CPP/simulation/out/RelSym: CMakeFiles/RelSym.dir/src/main.cpp.o
 /home/host0/Projects/CPP/simulation/out/RelSym: CMakeFiles/RelSym.dir/build.make
 /home/host0/Projects/CPP/simulation/out/RelSym: CMakeFiles/RelSym.dir/compiler_depend.ts
-/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libglfw.so.3.4
-/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libGLEW.so
-/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libGLX.so
+/home/host0/Projects/CPP/simulation/out/RelSym: _deps/raylib-build/raylib/libraylib.a
 /home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libOpenGL.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libGLX.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libGLU.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/librt.a
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libm.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libSM.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libICE.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libX11.so
+/home/host0/Projects/CPP/simulation/out/RelSym: /usr/lib/libXext.so
 /home/host0/Projects/CPP/simulation/out/RelSym: CMakeFiles/RelSym.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/host0/Projects/CPP/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/host0/Projects/CPP/simulation/out/RelSym"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RelSym.dir/link.txt --verbose=$(VERBOSE)

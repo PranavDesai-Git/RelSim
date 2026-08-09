@@ -5,8 +5,10 @@
   /usr/lib/crti.o \
   /usr/lib/crtn.o \
   /usr/lib/libc.so \
+  /usr/lib/libdl.a \
   /usr/lib/libgcc_s.so.1 \
   /usr/lib/libm.so \
+  /usr/lib/libpthread.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so \
@@ -15,324 +17,121 @@
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/ld-linux-x86-64.so.2 \
-  /usr/lib/libGL.so.1 \
-  /usr/lib/libGLEW.so \
+  /usr/lib/libGLU.so \
   /usr/lib/libGLX.so \
   /usr/lib/libGLdispatch.so.0 \
+  /usr/lib/libICE.so \
   /usr/lib/libOpenGL.so \
-  /usr/lib/libX11.so.6 \
+  /usr/lib/libSM.so \
+  /usr/lib/libX11.so \
   /usr/lib/libXau.so.6 \
   /usr/lib/libXdmcp.so.6 \
+  /usr/lib/libXext.so \
   /usr/lib/libc.so.6 \
   /usr/lib/libc_nonshared.a \
-  /usr/lib/libglfw.so.3.4 \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
+  /usr/lib/librt.a \
+  /usr/lib/libuuid.so.1 \
   /usr/lib/libxcb.so.1 \
-  /usr/lib32/libGL.so.1 \
   /usr/lib32/libGLdispatch.so.0 \
-  /usr/lib32/libX11.so.6 \
   /usr/lib32/libXau.so.6 \
   /usr/lib32/libXdmcp.so.6 \
+  /usr/lib32/libuuid.so.1 \
   /usr/lib32/libxcb.so.1 \
-  CMakeFiles/RelSym.dir/src/main.cpp.o
+  CMakeFiles/RelSym.dir/src/main.cpp.o \
+  _deps/raylib-build/raylib/libraylib.a
 
 CMakeFiles/RelSym.dir/src/main.cpp.o: /home/host0/Projects/CPP/simulation/src/main.cpp \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glew.h \
-  /usr/include/GL/glu.h \
-  /usr/include/GLFW/glfw3.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/c++/16/bits/std_abs.h \
-  /usr/include/c++/16/bits/version.h \
-  /usr/include/c++/16/cstddef \
-  /usr/include/c++/16/cstdint \
-  /usr/include/c++/16/cstdio \
-  /usr/include/c++/16/cstdlib \
-  /usr/include/c++/16/pstl/pstl_config.h \
-  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/endian.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
+  _deps/raylib-src/src/raylib.h \
   /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h
 
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h:
+/usr/include/stdc-predef.h:
+
+_deps/raylib-build/raylib/libraylib.a:
+
+/usr/lib32/libxcb.so.1:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdarg.h:
 
-/usr/include/sys/types.h:
+/usr/lib32/libXdmcp.so.6:
 
-/usr/include/sys/cdefs.h:
+/usr/lib32/libXau.so.6:
 
-/usr/include/stdlib.h:
+CMakeFiles/RelSym.dir/src/main.cpp.o:
 
-/usr/include/stdint.h:
+/usr/lib/libxcb.so.1:
 
-/usr/include/gnu/stubs.h:
+/usr/lib32/libuuid.so.1:
 
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/features.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/16/cstdio:
-
-/usr/include/c++/16/cstdint:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
-
-/usr/include/c++/16/pstl/pstl_config.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/sys/select.h:
-
-/usr/lib/libm.so.6:
-
-/usr/include/bits/pthreadtypes.h:
+/usr/lib/libuuid.so.1:
 
 /usr/lib/libmvec.so.1:
 
-/usr/lib32/libGL.so.1:
+/usr/lib/crtn.o:
 
-/usr/include/c++/16/cstdlib:
+/usr/lib/libc.so.6:
 
-/usr/lib/libXau.so.6:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
 
-/usr/lib/libX11.so.6:
+/usr/lib/libc_nonshared.a:
 
-/usr/include/bits/struct_mutex.h:
+/usr/lib/libpthread.a:
 
-/usr/include/bits/stdint-intn.h:
+/usr/lib32/libGLdispatch.so.0:
 
-/usr/lib/libGLdispatch.so.0:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/endian.h:
-
-/usr/lib/libGL.so.1:
-
-/usr/include/c++/16/bits/version.h:
-
-/usr/lib/libXdmcp.so.6:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/lib/Scrt1.o:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
-
-/usr/lib/libc.so:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib/libglfw.so.3.4:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so:
 
 /usr/lib/libm.so:
 
-/usr/include/alloca.h:
+_deps/raylib-src/src/raylib.h:
 
-/usr/include/c++/16/cstddef:
+/usr/lib/libgcc_s.so.1:
 
-/usr/include/bits/stdint-least.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
+
+/usr/lib/libX11.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so:
+
+/usr/lib/libGLX.so:
+
+/usr/lib/libc.so:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
+
+/usr/lib/Scrt1.o:
+
+/usr/lib/libXdmcp.so.6:
 
 /usr/lib/crti.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s.so:
 
-/usr/include/bits/types/FILE.h:
-
-/usr/include/GLFW/glfw3.h:
-
-/usr/lib/libgcc_s.so.1:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic.so:
-
-/usr/lib32/libGLdispatch.so.0:
-
-/usr/include/c++/16/bits/std_abs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
-
-/usr/lib32/libX11.so.6:
-
-/usr/include/bits/types.h:
-
-/usr/lib/libc_nonshared.a:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
-
-/usr/lib/libc.so.6:
-
-/usr/lib/libOpenGL.so:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/16/libatomic_asneeded.so:
-
-/usr/lib/crtn.o:
-
-/usr/lib/libxcb.so.1:
-
-CMakeFiles/RelSym.dir/src/main.cpp.o:
+/usr/lib/libdl.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 
-/usr/include/bits/waitstatus.h:
+/usr/lib/libGLdispatch.so.0:
 
-/usr/lib/libGLEW.so:
+/usr/lib/librt.a:
 
-/usr/lib32/libXau.so.6:
+/usr/lib/libGLU.so:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/lib/libICE.so:
 
-/usr/lib32/libxcb.so.1:
+/usr/lib/libXext.so:
 
-/usr/include/endian.h:
+/usr/lib/libOpenGL.so:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/lib/libSM.so:
 
-/usr/include/bits/stdint-uintn.h:
+/usr/lib/libXau.so.6:
 
 /home/host0/Projects/CPP/simulation/src/main.cpp:
 
-/usr/include/GL/glew.h:
+/usr/lib/ld-linux-x86-64.so.2:
 
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/GL/glu.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/lib/libGLX.so:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/lib32/libXdmcp.so.6:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/bits/struct_rwlock.h:
+/usr/lib/libm.so.6:
