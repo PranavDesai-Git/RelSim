@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/host0/Projects/CPP/simulation/build",
+  "command": "/usr/bin/c++  -I/home/host0/Projects/CPP/simulation/include -std=gnu++23 -o CMakeFiles/RelSym.dir/src/main.cpp.o -c /home/host0/Projects/CPP/simulation/src/main.cpp",
+  "file": "/home/host0/Projects/CPP/simulation/src/main.cpp",
+  "output": "CMakeFiles/RelSym.dir/src/main.cpp.o"
+}
+]

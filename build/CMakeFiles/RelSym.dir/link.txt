@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/RelSym.dir/link.d CMakeFiles/RelSym.dir/src/main.cpp.o -o /home/host0/Projects/CPP/simulation/out/RelSym  /usr/lib/libglfw.so.3.4 /usr/lib/libGLEW.so /usr/lib/libGLX.so /usr/lib/libOpenGL.so

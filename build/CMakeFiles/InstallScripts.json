@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/host0/Projects/CPP/simulation/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
